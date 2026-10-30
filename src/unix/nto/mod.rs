@@ -1900,11 +1900,13 @@ pub const SOCK_RAW: c_int = 3;
 pub const SOCK_RDM: c_int = 4;
 pub const SOCK_CLOEXEC: c_int = 0x10000000;
 
-pub const SA_SIGINFO: c_int = 0x0002;
-pub const SA_NOCLDWAIT: c_int = 0x0020;
-pub const SA_NODEFER: c_int = 0x0010;
+pub const SA_ONSTACK: c_int = 0x0001;
+pub const SA_RESTART: c_int = 0x0002;
 pub const SA_RESETHAND: c_int = 0x0004;
-pub const SA_NOCLDSTOP: c_int = 0x0001;
+pub const SA_NOCLDSTOP: c_int = 0x0008;
+pub const SA_NODEFER: c_int = 0x0010;
+pub const SA_NOCLDWAIT: c_int = 0x0020;
+pub const SA_SIGINFO: c_int = 0x0040;
 
 pub const SIGTTIN: c_int = 26;
 pub const SIGTTOU: c_int = 27;
