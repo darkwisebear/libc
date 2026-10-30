@@ -1017,6 +1017,7 @@ cfg_if! {
         pub const pseudo_AF_HDRCMPLT: c_int = 31;
         pub const SIOCGIFADDR: c_int = 0xc0206921;
         pub const SO_SETFIB: c_int = 0x1014;
+        pub const TCP_KEEPIDLE: c_int = 256;
     }
 }
 
